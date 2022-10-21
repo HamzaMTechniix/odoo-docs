@@ -36,4 +36,4 @@ class MtxExample(models.Model)
 
 #### Explication
 
-Dans cet exemple, si on change l'année de naissance (**year\_birth**) à **2012** alors qu'actuellement on est en **2022**, l'age devient automatiquement **10** grâce à la méthode inverse **\_compute\_age** du champ **year\_birth**. Et vice-versa, si on change l'âge (age) à **22,**  l'année de naissance change automatiquement à **2000**.
+Dans cet exemple, si on change l'année de naissance (**year\_birth**) à **2012** alors qu'actuellement on est en **2022**, l'âge (age) devient automatiquement **10** grâce à la méthode inverse **\_compute\_age** du champ **year\_birth**. Et vice-versa, si on change l'âge (age) à **22,**  l'année de naissance change automatiquement à **2000**.
