@@ -1,4 +1,4 @@
-# Table des matières
+# Table of contents
 
 ## Python
 
@@ -7,3 +7,4 @@
     * [Filtered](python/enregistrements-ou-recordsets/des-fonctions-odoo-utiles/filtered.md)
 * [Excel](python/excel/README.md)
   * [Import](python/excel/import.md)
+  * [Export](python/excel/export.md)
