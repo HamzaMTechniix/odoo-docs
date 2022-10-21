@@ -10,6 +10,8 @@ mon_champ = fields.Integer(compute='_compute_mon_champ', inverse='_inverse_mon_c
 
 #### Modèle
 
+Un modèle avec deux champs: **year\_birth**  et **age**.
+
 ```python
 from datetime import date
 
