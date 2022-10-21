@@ -1,6 +1,14 @@
 # Compute & Inverse
 
-### Codes
+Pour rendre un champ compute éditable, on doit lui donner la propriété **inverse** c'est à dire une méthode qui s'exécute chaque fois que la valeur du champ change.&#x20;
+
+```python
+mon_champ = fields.Integer(compute='_compute_mon_champ', inverse='_inverse_mon_champ', store=True)
+```
+
+### Exemple
+
+#### Modèle
 
 ```python
 from datetime import date
@@ -20,14 +28,12 @@ class MtxExample(models.Model)
         self.age = date.today().year - self.year_birth
 ```
 
-### Données
+#### Données
 
 | year\_birth | age |
 | ----------- | --- |
 | 1998        | 24  |
 
-### Explication
-
-Pour rendre un champ compute éditable, on lui donne la propriété **inverse** c'est à dire une méthode qui s'exécute chaque fois que la valeur du champ change.&#x20;
+#### Explication
 
 Dans cet exemple, si on change l'année de naissance (**year\_birth**) à **2012** alors qu'actuellement on est en **2022**, l'age devient automatiquement **10** grâce à la méthode inverse **\_compute\_age** du champ **year\_birth**. Et vice-versa, si on change l'âge (age) à **22,**  l'année de naissance change automatiquement à **2000**.
