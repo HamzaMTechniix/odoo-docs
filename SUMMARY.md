@@ -1,12 +1,9 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## Python
 
-* [Enregistrements ou Recordsets](python/recordsets/README.md)
-  * [Des fonctions Odoo utiles](python/recordsets/operations-func/README.md)
-    * [Filtered](python/recordsets/operations-func/filtered.md)
-* [Excel](python/excel/README.md)
-  * [Import](python/excel/import.md)
-  * [Export](python/excel/export.md)
+* [Enregistrements ou Recordsets](README.md)
+  * [Des fonctions Odoo utiles](python/enregistrements-ou-recordsets/des-fonctions-odoo-utiles/README.md)
+    * [Filtered](python/enregistrements-ou-recordsets/des-fonctions-odoo-utiles/filtered.md)
+  * [Excel](python/enregistrements-ou-recordsets/excel/README.md)
+    * [Import](python/enregistrements-ou-recordsets/excel/import.md)
